@@ -1,3 +1,5 @@
 FROM flaviostutz/json-server
 
-ADD db.json /
+VOLUME [ "/data" ]
+
+ADD db.json /data/

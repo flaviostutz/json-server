@@ -16,5 +16,5 @@ if [ "$RESPONSE_DELAY_MS" != "" ]; then
 fi
 
 set -x
-json-server -H 0.0.0.0 -p 3000 /db.json $DELAY
+json-server -H 0.0.0.0 -p 3000 /data/db.json $DELAY
 

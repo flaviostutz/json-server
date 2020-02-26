@@ -9,8 +9,9 @@ EXPOSE 3000
 
 WORKDIR /
 
-# ADD db.json /
 ADD init.js /
 ADD startup.sh /
+
+VOLUME [ "/data" ]
 
 CMD [ "/startup.sh" ]

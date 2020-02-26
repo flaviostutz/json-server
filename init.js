@@ -4,7 +4,7 @@ const fs = require('fs')
 
 const collections = process.env.COLLECTIONS.split(",")
 
-const file = '/db.json'
+const file = '/data/db.json'
 
 if(collections.length>0) {
     var dbobj = {}

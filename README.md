@@ -1,7 +1,11 @@
 # json-server
 Docker container for https://github.com/typicode/json-server - a fake REST API for devs
 
+This is useful for simulating a real REST server with a full REST interface.
+
 You can define a list of COLLECTIONS that will be accepted in REST calls at http://localhost:3000/[COLLECTION] in ENV parameters (see below).
+
+After POST, data will be recorded to /data/db.json, so it can be persistent.
 
 See more info at https://github.com/typicode/json-server
 
@@ -30,7 +34,7 @@ services:
 
 ## Tips
 
-* To use your own json data, extend this container (FROM flaviostutz/json-server) and place your own db.json file at /db.json (see [/example](/example)
+* To use your own json data, extend this container (FROM flaviostutz/json-server) and place your own db.json file at /data/db.json (see [/example](/example)
 
 * Good tutorial on json-server usage at https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
 
