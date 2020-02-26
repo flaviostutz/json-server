@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  json-server:
+    build: .
+    image: flaviostutz/another-json-server
+    ports:
+      - "3000:3000"
+    environment:
+      - COLLECTIONS=other1,other2
